@@ -190,3 +190,13 @@ namespace CRUD
         {
             LoadData();
         }
+        // Fungsi untuk mengosongkan semua input pada TextBox
+        private void ClearForm()
+        {
+            txtNIM.Clear();
+            txtNama.Clear();
+            txtEmail.Clear();
+            txtTelepon.Clear();
+            txtAlamat.Clear();
+            txtNIM.Focus(); // Fokus kembali ke NIM agar siap memasukkan data baru
+        }
