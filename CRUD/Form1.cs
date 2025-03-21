@@ -216,3 +216,9 @@ namespace CRUD
                     dgvMahasiswa.DataSource = dt;
                     ClearForm(); // Auto Clear setelah LoadData
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message, "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
